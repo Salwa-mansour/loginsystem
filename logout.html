@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1256" />
+<head>
+  <meta charset="utf-8">
+<head>
+	<title>تم تسجيل الخروج</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+	<meta charset="UTF-8">
+	$(if refresh-timeout)
+	<meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+	$(endif)
+    <link rel="stylesheet" href="mikrotikstyle.css" media="screen" type="text/css" />
+	<script language="JavaScript">
+	<!--
+	$(if advert-pending == 'yes')
+		var popup = '';
+		function focusAdvert() {
+		if (window.focus) popup.focus();
+		}
+		function openAdvert() {
+		popup = open('$(link-advert)', 'hotspot_advert', '');
+		setTimeout("focusAdvert()", 1000);
+		}
+	$(endif)
+		function openLogout() {
+		if (window.name != 'hotspot_status') return true;
+			open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+		window.close();
+		return false;
+		}
+	//-->
+	</script>
+</head>
+
+<body>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="0" width="0">
+  <defs>
+     <filter id="blur" x="0" y="0">
+       <feGaussianBlur stdDeviation="3" />
+     </filter>
+  </defs>
+</svg> 
+  
+<div class="background"></div>
+<div class="poweredby"></div>
+<div class="body">
+<div class="topspacer"></div>
+	<div class="formback"><br>
+	<img src="logo.png"><table class="table" dir="rtl">
+			<thead>
+				<tr>
+					<th colspan="2">
+					<p style="text-align: right">
+					<a class="navbar-brand" href="#"></a>
+					<p style="text-align: center"><font color="#3A87AD">تم تسجيل 
+					الحروج بنجاح</font></th>
+				</tr>
+				<tr>
+					<th colspan="2">&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td align="right">
+					<p align="left"><b><span style="font-weight: 400">التنزيل المستخدم</span></b></td>
+					<td><b><span style="font-weight: 400">$(bytes-total-nice)</span></b></td>
+				</tr>
+				<tr class="active">
+					<td width="49%" height="47">
+					<p align="left"><b><span style="font-weight: 400">وقت الجلسة 
+					</span></b></td>
+					<td width="49%" height="47"><b>
+					<span style="font-weight: 400">$(uptime) 
+				</span></b></td>
+				</tr>
+				<tr class="active">
+					<td width="49%">
+					<p align="left"><b><span style="font-weight: 400">الوقت المتبقي</span></b></td>
+					<td width="49%"><b><span style="font-weight: 400">$(session-time-left)</span></b></td>
+				</tr>
+			</tbody>
+		</table>
+		<p dir="rtl"> 
+<form action="$(link-login)" name="login" onSubmit="return openLogin()">
+<input type="submit" value="تسجيل الدخول مرة اخرى">
+
+	<p>&nbsp;</p>
+
+	</div>
+</div>
+
+
+
+</body>
+
+</html>
