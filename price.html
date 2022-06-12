@@ -1,146 +1,120 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
-  <meta http-equiv="Content-Type" content="text/html; charset=windows-1256" />
-<head>
-  <meta charset="utf-8">
-  <head>  	
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-	<title>تقاط البيع</title>
-<head>
+<html lang="ar-sa" dir="rtl">
 
-  <meta charset="UTF-8">
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1256" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
-  <title>Log-in - Internet Hotspot</title>
-
-    <link rel="stylesheet" href="mikrotikstyle.css" media="screen" type="text/css" />
-
-
+	<link rel="stylesheet" href="mikrotikstyle.css" media="screen" type="text/css" />
+	<title>Log-in - Internet Hotspot</title>
+	<title>ï؟½ï؟½ï؟½ï؟½ ï؟½ï؟½ï؟½ï؟½ï؟½ï؟½ï؟½ï؟½ ï؟½ï؟½</title>
 </head>
-<div class="login-logo">
-<div class="login-box clearfix animated flipInY">
-			       		<div class="page-icon animated bounceInDown">
-			       			<img  src="wireless.png" alt="Key icon" />
-			       		</div>
-			        	<div class="login-logo">
-			        		
-							
-							
-							
-							
-			 
-				  
-				
-				
-						  <link href="" rel="stylesheet">
-						  <!--[if lt IE 9]><![endif]--> <script type="text/javascript">
-        function removeWhitespaces(txt) {
-            var txtbox = document.getElementById(txt);
-            //txtbox.value = txtbox.value.replace(/\s/g, "");
-			var str=txtbox.value;
-			txtbox.value=str.toLowerCase();			
-            txtbox.value = txtbox.value.replace(/[^a-z0-9]/g, "");            
-            //var str=txtbox.value;
-            //txtbox.value=str.toLowerCase();
-        }      
-    </script></head> 
-						  <body>
-				
+<!--[if lt IE 9]><![endif]-->
+<script type="text/javascript">
+	function removeWhitespaces(txt) {
+		var txtbox = document.getElementById(txt);
+		//txtbox.value = txtbox.value.replace(/\s/g, "");
+		var str = txtbox.value;
+		txtbox.value = str.toLowerCase();
+		txtbox.value = txtbox.value.replace(/[^a-z0-9]/g, "");
+		//var str=txtbox.value;
+		//txtbox.value=str.toLowerCase();
+	}
+</script>
+
+
 <body>
-<svg version="1.1"  height="0" width="0">
-  <defs>
-     <filter id="blur" x="0" y="0">
-       <feGaussianBlur stdDeviation="3" />
-     </filter>
-  </defs>
-</svg> 
-$(if chap-id)
+
+	$(if chap-id)
 	<form name="sendin" action="$(link-login-only)" method="post">
-		
+
+
+		<script type="text/javascript" src="/md5.js"></script>
+		<script type="text/javascript">
+			function doLogin() {
+				document.sendin.username.value = document.login.username.value;
+				document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+				document.sendin.submit();
+				return false;
+			}
+		</script>
+		$(endif)
+
+
+		<div id="page">
+			<div class="poweredby branding-benner">
+				<h1>ط´ط¨ظƒط© ط§ظ„ط£طµط¯ظ‚ط§ط، ظ†طھ</h1>
+			</div>
+			<div class="main-content">
+
+
+
+
+				<div class="customerlogo branding-benner">
+					<!-- <img  src="logo.png" width="270" height="100"> -->
+					<h1>ط´ط¨ظƒط© ط§ظ„ط£طµط¯ظ‚ط§ط، ظ†طھ</h1>
+				</div>
+
+				<div class="navigation-links">
+					<ul>
+						<li><a href="login.html">طµظپط­ط© ط§ظ„ط¯ط®ظˆظ„</a></li>
+						<li><a href="sellers.html">ظ†ظ‚ط§ط· ط§ظ„ط¨ظٹط¹</a></li>
+					</ul>
+				</div>
 	
-	<script type="text/javascript" src="/md5.js"></script>
-	<script type="text/javascript">
-	<!--
-	    function doLogin() {
-		document.sendin.username.value = document.login.username.value;
-		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
-		document.sendin.submit();
-		return false;
-	    }
-	//-->
-	</script>
-$(endif) 
-  
- 
-<div class="background"></div>
-<div class="poweredby"></div>
-<div class="body">
-<div class="topspacer"></div>
-	<div class="formback">
 
 
-		<img class="customerlogo" src="clientlogo.png"><br>
-		<b><span lang="ar-ye"> 
-							<font size="6" color="#000000">
-							<span style="background-color: #FAEBCC">&nbsp;<a href="sellers.html">نقاط 
-		البيع</a> | <a href="login.html">تسجيل الدخول</a></span></font></span></b>
-		<div align="center"> <table border="1" height="122" width="91%">
-								<!-- MSTableType="nolayout" -->
-								<tr class="auto-style13">
-									<td class="auto-style22" align="center" bgcolor="#000000" colspan="3" dir="rtl">
-									<b><font color="#FFFFFF" size="5">
-									<span lang="ar-ye">اسعار الكروت الجديده</span></font></b></td>
-								</tr>
-								<tr class="auto-style13">
-									<td class="auto-style22" align="center" bgcolor="#000000" dir="rtl">
-									<b><font color="#FFFFFF" size="4">
-									<span lang="ar-ye">المده والميجــا</span></font></b></td>
-									<td class="auto-style22" align="center" bgcolor="#000000" dir="rtl">
-									<b><span lang="ar-ye">
-									<font color="#FFFFFF" size="4">السعر</font></span></b></td>
-									<td class="auto-style22" align="center" bgcolor="#000000" dir="rtl">
-									<b><span lang="ar-ye">
-									<font color="#FFFFFF" size="4">الصلاحية</font></span></b></td>
-								</tr>
-								<tr class="auto-style13">
-									<td class="auto-style13" align="center" bgcolor="#D43F3A" width="44%" dir="rtl">
-									<b><font color="#FFFFFF" size="4">
-									<span lang="ar-ye">3 ساعات - عددالميجا 400 </span></font></b></td>
-									<td class="auto-style13" align="center" bgcolor="#A0A0A0" width="26%" dir="rtl">
-									<b><font color="#FFFFFF" size="4">
-									<span lang="ar-ye">100 ريال</span></font></b></td>
-									<td class="auto-style13" align="center" bgcolor="#D43F3A" width="22%" dir="rtl">
-									<b><span lang="ar-ye">
-									<font size="4" color="#FFFFFF">5 أيام</font></span></b></td>
-								</tr>
-								<tr class="auto-style13">
-									<td class="auto-style13" align="center" bgcolor="#39B3D7" width="44%" dir="rtl">
-									<b><span lang="ar-ye">
-									<font size="4" color="#FFFFFF">9 ساعات -عددالميجا 1024 </font></span></b></td>
-									<td class="auto-style13" align="center" bgcolor="#D43F3A" width="26%" dir="rtl">
-									<b><span lang="ar-ye">
-									<font size="4" color="#FFFFFF">250 ريال</font></span></b></td>
-									<td class="auto-style13" align="center" bgcolor="#39B3D7" width="22%" dir="rtl">
-									<b><span lang="ar-ye">
-									<font size="4" color="#FFFFFF">10 ايام</font></span></b></td>
-								</tr>
-								<tr class="auto-style13">
-									<td class="auto-style13" align="center" bgcolor="#D43F3A" width="44%" dir="rtl">
-									<b><span lang="ar-ye">
-									<font size="4" color="#FFFFFF">22 ساعه - عددالميجا 2048</font></span></b></td>
-									<td class="auto-style13" align="center" bgcolor="#39B3D7" width="26%" dir="rtl">
-									<b><span lang="ar-ye">
-									<font size="4" color="#FFFFFF">500 ريال</font></span></b></td>
-									<td class="auto-style13" align="center" bgcolor="#D43F3A" width="22%" dir="rtl">
-									<b><span lang="ar-ye">
-									<font size="4" color="#FFFFFF">20 يوم</font></span></b></td>
-								</tr>
-								
-							</table>
-							
-		<p><b><a href="login.html">اضغط هنا لتسجيل الدخول</a></b>
-							
-	</body>
+				<table class="main-table">
+					<caption>ط§ط³ط¹ط§ط± ط§ظ„ظƒط±ظˆطھ ط§ظ„ط¬ط¯ظٹط¯ط©</caption>
+					<thead>
+					  <tr>
+						<th scope="col">ط§ظ„ظ…ط¯ط© </th>
+						<th scope="col"> ط¹ط¯ط¯ ط§ظ„ظ…ظٹط¬ط§</th>
+
+						<th scope="col"> ط§ظ„ط³ط¹ط±</th>
+						<th scope="col">  ط§ظ„طµظ„ط§ط­ظٹط©</th>
+					
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+					
+						<td>3ط³ط§ط¹ط§طھ </td>
+						<td>400ظ…ظٹط¬ط§ </td>
+						<td>100ط±ظٹط§ظ„</td>
+						<td>3ط£ظٹط§ظ…</td>
+					  </tr>
+
+					  <tr>
+					
+						<td>1976</td>
+						<td>1976</td>
+						<td>6</td>
+						<td>London Calling</td>
+					  </tr>
+				  
+					  <tr>
+					
+						<td>1976</td>
+						<td>1976</td>
+						<td>6</td>
+						<td>London Calling</td>
+					  </tr>
+				  
+			
+					 
+					</tbody>
+				
+				  </table>
+				  
+
+		
+		</div>
+		<!--main-content-->
+		</div>
+		<!--#page-->
+</body>
 
 </html>
