@@ -1,0 +1,164 @@
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background: red;
+    /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(#0A7294, #032936) no-repeat;
+    /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#0A7294, #032936) no-repeat;
+    /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#0A7294, #032936) no-repeat;
+    /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#0A7294, #032936) no-repeat;
+    /* Standard syntax (must be last) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    transition: width 0.3s ease;
+}
+
+.box {
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    margin: 85px auto 70px auto;
+    text-align: center;
+    position: relative;
+    border-bottom: 4px solid #0085DE;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.box .header {
+    color: black;
+}
+
+.icon {
+    background-color: #0085DE;
+    width: 70px;
+    height: 70px;
+    font-size: 2.2rem;
+    border-radius: 50px;
+    vertical-align: top;
+    padding: 1px;
+    position: absolute;
+    top: -35px;
+    left: 45%;
+}
+
+.icon i {
+    color: white;
+}
+
+.hr {
+    width: 90%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.22);
+    margin: 10px auto;
+}
+
+.section {
+    direction: rtl;
+    margin: 10px 0 10px 0;
+    padding: 15px;
+    color: white;
+    font-size: 1rem;
+    font-size: bold;
+}
+
+.username {
+    background-color: #C70000;
+}
+
+.card {
+    background-color: #006AC7;
+}
+
+.remain {
+    background-color: #C75000;
+}
+
+.submit button {
+    width: 50%;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #15B300;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.33);
+}
+
+.submit button:hover {
+    background-color: #108C00;
+}
+
+@keyframes anime {
+    from {
+        color: #D60000;
+    }
+
+    to {
+        color: #0085DE;
+    }
+}
+
+@-webkit-keyframes anime {
+    from {
+        color: #D60000;
+    }
+
+    to {
+        color: #0085DE;
+    }
+}
+
+.animate {
+    animation: anime .25s infinite alternate;
+    -webkit-animation: anime .25s infinite alternate;
+}
+
+@media screen and (max-width:964px) {
+    .icon {
+        left: 44%;
+    }
+}
+
+@media screen and (max-width:781px) {
+    .box {
+        width: 60%;
+    }
+
+    .icon {
+        left: 42%;
+    }
+}
+
+@media screen and (max-width:562px) {
+    .box {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .icon {
+        left: 39%;
+    }
+}
+
+@media screen and (max-width:284px) {
+    .icon {
+        left: 37%;
+    }
+}
