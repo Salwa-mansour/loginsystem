@@ -1,0 +1,30 @@
+{
+  "name": "y",
+  "description": "A Pen created at CodePen.io. You can find this one at http://codepen.io/Mongeed/pen/IuBLt.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'yee'",
+    "prefix": "postcss ./css_dev/*.css --use autoprefixer -d ./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salwa-mansour/loginsystem.git"
+  },
+  "keywords": [
+    "hostspot",
+    "login_system"
+  ],
+  "author": "Salwa Mansour",
+  "license": "ISC",
+  "browserslist": "defaults",
+  "bugs": {
+    "url": "https://github.com/Salwa-mansour/loginsystem/issues"
+  },
+  "homepage": "https://github.com/Salwa-mansour/loginsystem#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0"
+  }
+}
