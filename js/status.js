@@ -1,6 +1,7 @@
 
-//  $
-if (advert - pending == 'yes')
+// 
+   // document.addEventListener('DOMContentLoaded', () => {
+    $(if advert-pending == 'yes') //miroctic if syntax
     var popup = '';
 
 function focusAdvert() {
@@ -11,7 +12,7 @@ function openAdvert() {
     popup = open('$(link-advert)', 'hotspot_advert', '');
     setTimeout("focusAdvert()", 1000);
 }
-$(endif)
+$(endif) // end of microtic if 
 
 function openLogout() {
     if (window.name != 'hotspot_status') return true;
@@ -41,3 +42,4 @@ function readablizeBytes(bytes) {
 document.getElementById("timeLeft").innerHTML = "$(session-time-left)".replace("w", " ����� , ").replace("d",
     " ��� , ").replace("h", " ���� , ").replace("m", " ����� , ").replace("s", " �����");
 
+    document.getElementById("megaLift").innerHTML =readablizeBytes($(remain - bytes - total));
