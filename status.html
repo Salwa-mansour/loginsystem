@@ -70,6 +70,7 @@
                             <!-- <script language="JavaScript">
                                 document.write(readablizeBytes($(remain - bytes - total)));
                             </script> -->
+                            $(remain-bytes-total)
                         </td>
                     </tr>
                 </tbody>
@@ -90,10 +91,8 @@
  <script language="JavaScript">
      function leftedMega(){
           var megaData=document.getElementById("megaLift");
-    //  console.log("yo");
-    //  console.log(megaData);
-     megaData.innerHTML = readablizeBytes(`$(remain - bytes - total)`);
-    // console.log(readablizeBytes($(remain - bytes - total)))
+        var  megaDataNumber =Number(megaData.textContent.trim());
+     megaData.innerHTML = readablizeBytes(megaDataNumber);
     console.log('haoray')
      }
       leftedMega();
