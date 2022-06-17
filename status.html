@@ -96,7 +96,33 @@
     console.log('haoray')
      }
       leftedMega();
-    $(if advert-pending == 'yes')//miroctic if syntax
+    //   --------------------------
+      function leftedTimeF(){
+        var leftedTime = document.getElementById("timeLeft");
+        var leftedTimeData = leftedTime.textContent.trim().replace("w", " اسابيع , ").replace("d",
+     " يوم , ").replace("h", " ساعة , ").replace("m", " دقيقة , ").replace("s", " ثانية");
+        leftedTime.innerHTML = leftedTimeData;
+      }
+     leftedTimeF()
+//    -------------------------------
+
+        function readablizeBytes(bytes) {
+            var s = ['bytes', 'kb', 'MB', 'GB', 'TB', 'PB'];
+            var e = Math.floor(Math.log(bytes) / Math.log(1024));
+            return (bytes / Math.pow(1024, Math.floor(e))).toFixed(2) + " " + s[e];
+        }
+
+        function readablizeBytes(bytes) {
+            var s = ['&#1576;&#1575;&#1610;&#1578;', '&#1603;&#1610;&#1604;&#1608;&#1576;&#1575;&#1610;&#1578;',
+                '&#1605;&#1610;&#1580;&#1575;&#1576;&#1575;&#1610;&#1578;',
+                '&#1580;&#1610;&#1580;&#1575;&#1576;&#1575;&#1610;&#1578;',
+                '&#1578;&#1610;&#1585;&#1575;&#1576;&#1575;&#1610;&#1578;', 'PB'
+            ];
+            var e = Math.floor(Math.log(bytes) / Math.log(1024));
+            return (bytes / Math.pow(1024, Math.floor(e))).toFixed(2) + " " + s[e];
+        }
+// -----------------------
+        $(if advert-pending == 'yes')//miroctic if syntax
         var popup = '';
 
         function focusAdvert() {
@@ -116,27 +142,7 @@
             window.close();
             return false;
         }
-
-
-        function readablizeBytes(bytes) {
-            var s = ['bytes', 'kb', 'MB', 'GB', 'TB', 'PB'];
-            var e = Math.floor(Math.log(bytes) / Math.log(1024));
-            return (bytes / Math.pow(1024, Math.floor(e))).toFixed(2) + " " + s[e];
-        }
-
-        function readablizeBytes(bytes) {
-            var s = ['&#1576;&#1575;&#1610;&#1578;', '&#1603;&#1610;&#1604;&#1608;&#1576;&#1575;&#1610;&#1578;',
-                '&#1605;&#1610;&#1580;&#1575;&#1576;&#1575;&#1610;&#1578;',
-                '&#1580;&#1610;&#1580;&#1575;&#1576;&#1575;&#1610;&#1578;',
-                '&#1578;&#1610;&#1585;&#1575;&#1576;&#1575;&#1610;&#1578;', 'PB'
-            ];
-            var e = Math.floor(Math.log(bytes) / Math.log(1024));
-            return (bytes / Math.pow(1024, Math.floor(e))).toFixed(2) + " " + s[e];
-        }
-
-        document.getElementById("timeLeft").innerHTML = "$(session-time-left)".replace("w", " اسابيع , ").replace("d",
-            " يوم , ").replace("h", " ساعة , ").replace("m", " دقيقة , ").replace("s", " ثانية");
-
+//don't write any thing after code above
    
    
     </script> 

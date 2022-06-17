@@ -34,20 +34,22 @@
 					<tr>
 						<td>التنزيل المستخدم</td>
 
-						<td>$(bytes-total-nice)</td>
+						<td id="session-used-bytes">
+							$(bytes-total-nice)
+						</td>
 					</tr>
 					<tr>
 						<td>
 							وقت الجلسة 
 						</td>
-						<td>
+						<td id="up-time">
 							$(uptime)
 						</td>
 					</tr>
 					<tr>
 						<td>
 							الوقت المتبقي
-						</td>
+						</td id="session-time-left">
 						<td>$(session-time-left)</td>
 					</tr>
 				</tbody>
@@ -62,8 +64,10 @@
 	</div>
 	<!--#page-->
 	<script language="JavaScript">
-		//$
-			if (advert - pending == 'yes')
+
+		
+	// --------------------------
+		$(if advert-pending == 'yes')//miroctic if syntax
 		var popup = '';
 	
 		function focusAdvert() {
@@ -83,6 +87,7 @@
 			window.close();
 			return false;
 		}
+		//don't write any thing after code above
 	</script>
 </body>
 
