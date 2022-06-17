@@ -89,21 +89,20 @@
     <!-- <script src="./js/status.js"> </script> -->
 
  <script language="JavaScript">
-     function leftedMega(){
+     function megaAmmoutWrite(){
           var megaData=document.getElementById("megaLift");
         var  megaDataNumber =Number(megaData.textContent.trim());
      megaData.innerHTML = readablizeBytes(megaDataNumber);
-    console.log('haoray')
      }
-      leftedMega();
+      megaAmmoutWrite();
     //   --------------------------
-      function leftedTimeF(){
+      function readablizeTime(){
         var leftedTime = document.getElementById("timeLeft");
         var leftedTimeData = leftedTime.textContent.trim().replace("w", " اسابيع , ").replace("d",
      " يوم , ").replace("h", " ساعة , ").replace("m", " دقيقة , ").replace("s", " ثانية");
         leftedTime.innerHTML = leftedTimeData;
       }
-     leftedTimeF()
+     readablizeTime()
 //    -------------------------------
 
         function readablizeBytes(bytes) {
