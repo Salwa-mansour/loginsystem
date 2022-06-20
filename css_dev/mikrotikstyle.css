@@ -20,7 +20,7 @@ body {
 
 #page {
 	position: relative;
-	background: url(../images/background.jpg);
+	background: url(../images/background4-2-min1.jpg);
 	background-size: cover;
 	/* background-position: 0% 0%; */
 
@@ -76,8 +76,8 @@ body {
 	top: 2vh;
 	left: 2vw;
 	z-index: 10;
-	margin: 1rem 0;
-	background-image: url(../images/backgorund2.jpg);
+	margin-top: 1rem;
+	background-image: url(../images/background.jpg);
 	background-size: 100% 100%;
 }
 
@@ -93,9 +93,8 @@ body {
 	max-width: 350px;
 	min-height: 380px;
 
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 2rem;
+	
+	margin: 2rem auto;
 	z-index: 20;
 	border-radius: 3px;
 	background-color: rgba(41, 39, 39, 0.5);
@@ -170,7 +169,9 @@ input[type=password] {
 	background-color: transparent;
 	color: white;
 }
-
+.main-content input[type=text]::placeholder{
+	color: white;
+}
 .main-content input[type=text]:focus,
 input[type=password]:focus,
 .main-content input[type=text]:hover,
@@ -213,27 +214,8 @@ input[type=password]:hover {
 	border-collapse: collapse;
 	border-color: #c1c1c1;
 	background-color: transparent;
-	font-size: 12px;
-}
+	font-size: 12p}
 
-.error {
-	color: #FF8080;
-	font-size: 9px;
-}
-
-.marquee {
-	height: 2rem;
-
-	overflow: hidden;
-	background-color: rgba(0, 0, 0, 0.8);
-}
-
-.marquee p {
-	white-space: nowrap;
-	line-height: 2;
-	animation: scrolling 10s cubic-bezier(.19, .18, .59, .59) 0s infinite;
-	text-align: right;
-}
 
 @keyframes scrolling {
 	0% {
@@ -283,16 +265,17 @@ input[type=password]:hover {
 	text-decoration: none;
 }
 
-.contact-us {
-	margin: 20px 0;
+.contact-us,
+.error-messege {
+	padding: 10px 0;
 }
-
+/* 
 @media screen and (min-width:480px) {
 
 	#page {
-		/* padding-top: 150px; */
+	
 	}
-}
+} */
 
 .main-table,
 .logout-info,
