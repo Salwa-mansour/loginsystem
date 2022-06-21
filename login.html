@@ -8,9 +8,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1256" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
 	<link rel="stylesheet" href="./css/mikrotikstyle.css" media="screen" type="text/css" />
-	<title>Log-in - Internet Hotspot</title>
-	<title>���� �������� ��</title>
-	
+	<!-- <title>Log-in - Internet Hotspot</title> -->
+	<title>شبكة الاصدقاء نت</title>
+
 </head>
 <!--[if lt IE 9]><![endif]-->
 <script type="text/javascript">
@@ -41,28 +41,28 @@
 
 	<div id="page">
 		<div class="ad-img">
-		
+
 		</div>
 		<div class="main-content">
 
-			
 
-				
-				<div class="  branding-benner">
-					<!-- <img  src="logo.png" width="270" height="100"> -->
-					<h1>شبكة الأصدقاء نت</h1>
-				</div>
-		
-				<div class="navigation-links">
-					<ul>
-						<li><a href="price.html">اسعار الكروت</a></li>
-						<li><a href="sellers.html">نقاط البيع</a></li>
-					</ul>
-				</div>
-				
+
+
+			<div class="  branding-benner">
+				<!-- <img  src="logo.png" width="270" height="100"> -->
+				<h1>شبكة الأصدقاء نت</h1>
+			</div>
+
+			<!-- <div class="navigation-links">
+				<ul>
+					<li><a href="price.html">اسعار الكروت</a></li>
+					<li><a href="sellers.html">نقاط البيع</a></li>
+				</ul>
+			</div> -->
+
 			<div class="marquee">
 				<p>
-					مرحبا بكم في شبكة الأصدقاء نت
+					شبكة الأصدقاء نت ترحب بكم وتتمنى لكم قضاء وقتاً ممتعاً ومفيداً
 				</p>
 			</div>
 			<form name="sendin" action="$(link-login-only)" method="post">
@@ -82,77 +82,77 @@
 				}
 			</script>
 
-			<form role="form" name="login" action="$(link-login-only)" method="POST" onsubmit="return doLogin()"
-				
-				<input name="dst" value="/" type="hidden" />
+			<form role="form" name="login" action="$(link-login-only)" method="POST" onsubmit="return doLogin()" <input
+				name="dst" value="/" type="hidden" />
 
-				<input name="popup" value="false" type="hidden" />
-				<div class="form-group">
-					<p style="direction: ltr">
-						<input class="form-control" id="username" name="username" id="username"
-							onkeypress="removeWhitespaces('username')" onmouseout="removeWhitespaces('username')"
-							value="$(username)" placeholder="ضع رقم الكرت" type="text" size="40"
-							style="text-align: center" />
-						<!--s-->
-					</p>
-				</div>
-				<!-- <div class="form-group"> </div> -->
-				<div class="form-group">
-					<p dir="ltr">
-						<input type="submit" value="���� LOG IN ">
-						<!--s-->
-					</p>
-				</div>
+			<input name="popup" value="false" type="hidden" />
+			<div class="form-group">
+				<p style="direction: ltr">
+					<input class="form-control" id="username" name="username" id="username"
+						onkeypress="removeWhitespaces('username')" onmouseout="removeWhitespaces('username')"
+						value="$(username)" placeholder="ادخل رقم الكرت" type="text" size="40"
+						style="text-align: center" />
+					<!--s-->
+				</p>
+			</div>
+			<!-- <div class="form-group"> </div> -->
+			<div class="form-group">
+				<p dir="ltr">
+					<input type="submit" value="تسجيل الدخول">
+					<!--s-->
+				</p>
+			</div>
 			</form>
 
 			<p class="contact-us">
-			
-					���� �������: 775119128
-			</p>
-	
-		$(if error)<div class="auto-style1">$(error)</div>$(endif)$(if error)<span class="auto-style1"><strong>
-				<script type="text/javascript">
-					var error = "$(error)";
-					if (error == "simultaneous session limit reached") {
-						document.write("����� ������ �� ��� ���� ���");
-					} else if (error == "invalid username or password") {
-						document.write("����� ����� �� ��� ����");
-					} else if (error == "access denied at this time") {
-						document.write("��� ������� ���� �� ���� ��������� �� ��� �����");
-					} else if (error == "uptime limit reached") {
-						document.write("��� ����� ����� ������ �� ������. ������ ������� ��� ���");
-					} else if (error == "reached uptime limit") {
-						document.write("��� ����� ����� �� �����. ������ ������� ��� ���");
-					} else if (error == "invalid password") {
-						document.write(" ����� ���");
-					} else if (error == "no more sessions are allowed for user $(username)") {
-						document.write("����� ������ �� ��� �������");
-					} else if (error == "no valid profile found") {
-						document.write("����� ����� �� ��� ���� ����");
-					} else if (error == "transfer limit reached") {
-						document.write("����� ���. ��� ��� �����");
-					} else if (error == "user $(username) has reached traffic limit") {
-						document.write("����� ���. ��� ��� ");
-					} else if (error == "user $(username) is not allowed to log in from this MAC address") {
-						document.write("��� ������ ��� ����� ��� ");
-					} else if (error.search("not found") != -1) {
-						document.write("����� ����� �� ��� ���� ���� ���� ���");
-					} else if (error == "invalid Calling-Station-Id") {
-						document.write("��� ������ ��� ����� ��� ������ �������� �� �����");
-					} else if (error == "radius timeout") {
-						document.write("����� ������� ����� �� ������ ������ ���� ������� ���� ����� ������ ���� �����");
-					} else if (error == " radius-timeout") {
-						document.write("����� ��� ����");
-					} else document.write("$(error)<br />")
-				</script>
-			</strong></span>
-		$(else)
-		$(endif)
-		&nbsp;
-		<!-- </p> -->
-		<p>
 
-			&nbsp;</p>
+				خدمة العملاء : 775119128
+			</p>
+
+			$(if error)<div class="auto-style1">$(error)</div>$(endif)$(if error)<span class="auto-style1"><strong>
+					<script type="text/javascript">
+						var error = "$(error)";
+						if (error == "simultaneous session limit reached") {
+							document.write("الكرت مستخدم من قبل جهاز اخر");
+						} else if (error == "invalid username or password") {
+							document.write("الكرت انتهى او غير صالح");
+						} else if (error == "access denied at this time") {
+							document.write("كرت إستخدام ليلي لا يمكن استخدامها في هذا الوقت");
+						} else if (error == "uptime limit reached") {
+							document.write("لقد انهيت رصيدك المحدد من الميجا. الرجاء استخدام كرت اخر");
+						} else if (error == "reached uptime limit") {
+							document.write("لقد انهيت رصيدك من الوقت. الرجاء استخدام كرت اخر");
+						} else if (error == "invalid password") {
+							document.write(" الرمز غلط");
+						} else if (error == "no more sessions are allowed for user $(username)") {
+							document.write("الكرت مستخدم من قبل جهازاخر");
+						} else if (error == "no valid profile found") {
+							document.write("الكرت انتهى او غير صالح تأكد");
+						} else if (error == "transfer limit reached") {
+							document.write("رصيدك خلص. روح عبي بسرعه");
+						} else if (error == "user $(username) has reached traffic limit") {
+							document.write("رصيدك خلص. روح عبي ");
+						} else if (error == "user $(username) is not allowed to log in from this MAC address") {
+							document.write("هذا الحساب خاص بجهاز اخر ");
+						} else if (error.search("not found") != -1) {
+							document.write("الكرت منتهي او غير صالح تأكد حفظك ربي");
+						} else if (error == "invalid Calling-Station-Id") {
+							document.write("رمز الدخول خاص بجهاز اخر لايمكن استخدامة في جهازك");
+						} else if (error == "radius timeout") {
+							document.write("عزيزي المشترك نعتذر عن انقطاع الخدمة بسبب الصيانة سيتم اعادة الخدمة خلال دقائق");
+						} else if (error == " radius-timeout") {
+							document.write("الكرت غير صالح");
+
+						} else document.write("$(error)<br />")
+					</script>
+				</strong></span>
+			$(else)
+			$(endif)
+			&nbsp;
+			<!-- </p> -->
+			<p>
+
+				&nbsp;</p>
 		</div>
 		<!--main-content-->
 

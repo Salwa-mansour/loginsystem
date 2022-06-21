@@ -10,9 +10,12 @@
 #inner {
 	width: 200px;
 }
-
+html{
+	font-size: 16px;
+}
 body {
 	font-family: 'Roboto', sans-serif;
+
 	color: white;
 	background-color:rgb(126, 203, 255);
 	direction: rtl;
@@ -20,7 +23,7 @@ body {
 
 #page {
 	position: relative;
-	background: url(../images/background.jpg);
+	background: url(../images/backgroundmobile_minfied.jpg);
 	background-size: cover;
 	/* background-position: 0% 0%; */
 
@@ -48,36 +51,40 @@ body {
 	/* background: radial-gradient(rgba(10, 113, 148, 0.8), rgba(3, 41, 54, 0.8)) no-repeat; */
 	/* backdrop-filter: blur(10px); */
 	/* background-color: rgba(255, 255, 255, 0.473); */
-	-webkit-backdrop-filter: blur(2px);
-	backdrop-filter: blur(2px);
+	/* -webkit-backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px); */
 }
 
 #page.less-transperant::after {
+/* #page::after { */
 	background-color: rgba(255, 255, 255, 0.5);
 }
 
 .branding-benner {
 	/* background: url(../images/logo.png); */
-	background-color: rgba(0, 0, 0, 0.8);
-	background-size: cover;
+	/* background-color: hsla(204, 50%, 70%, 0.5); */
+	box-shadow: inset 1px 1px 15px hsla(0, 0%, 100%, 0.5);
+	/* background-size: cover; */
 	/* width: 270px; */
 	height: 100px;
 	border-radius: 3px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: auto;
+	margin:0 auto 2rem;
 }
 
 .ad-img {
-	width: 350px;
+	max-width: 350px;
+	width: 90%;
 	height: 150px;
 	display: none;
 	top: 2vh;
 	left: 2vw;
 	z-index: 10;
 	margin: 1rem 0;
-	background-image: url(../images/backgorund2.jpg);
+	background-color: #3193d4;
+	background-image: url(../images/backgorund2);
 	background-size: 100% 100%;
 }
 
@@ -98,36 +105,39 @@ body {
 	margin-bottom: 2rem;
 	z-index: 20;
 	border-radius: 3px;
-	background-color: rgba(41, 39, 39, 0.5);
-
+	/* background-color: rgba(41, 39, 39, 0.5); */
+	background: radial-gradient( hsla(204, 90%, 30%, 0.9), hsla(204, 100%, 10%, 0.9) 60%)no-repeat;
+	/* background: radial-gradient( rgba(40, 133, 196, 0.8), rgba(2, 52, 85, 0.8) 60%), radial-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) ) no-repeat; */
 	padding: 10px;
 	/* -webkit-backdrop-filter: blur(5px);
 	backdrop-filter: blur(5px); */
-	box-shadow: 2px 2px 30px rgba(233, 233, 233, 0.541);
-}
-
-.less-transperant .main-content {
-		background: radial-gradient( rgba(40, 133, 196, 0.8), rgba(2, 52, 85, 0.8) 60%) no-repeat;
+	/* box-shadow: 2px 2px 30px rgba(233, 233, 233, 0.541); */
 	box-shadow: 1px 1px 5px black;
 }
+/* .main-content::before{
+	content: " ";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 5;
+} */
+/* .less-transperant .main-content {
+		background: radial-gradient( rgba(40, 133, 196, 0.8), rgba(2, 52, 85, 0.8) 60%) no-repeat;
+	box-shadow: 1px 1px 5px black;
+} */
 
 .branding-benner h1 {
-	/*  position:relative;
-	top: 50%;
-	 transform: translateY(-50%); */
-	/*	width: 100%;
-	text-align: center; */
 	overflow: hidden;
-	/* Ensures the content is not revealed until the animation */
-	/*border-left: .15em solid orange; The typwriter cursor;*/
 	white-space: nowrap;
-	/* Keeps the content on a single line */
 	margin: 0 auto;
+	color: #ff8c28;
 	/* Gives that scrolling effect as the typing happens */
 	/* letter-spacing: .15em; Adjust as needed */
 	animation:
 		typing 3.5s steps(40, end) infinite
-		/* blink-caret .75s step-end infinite; */
 }
 
 /* The typing effect */
@@ -170,6 +180,14 @@ input[type=password] {
 	background-color: transparent;
 	color: white;
 }
+.main-content input[type=text]::placeholder,
+input[type=password]::placeholder{
+	color: whitesmoke;
+}
+.main-content input[type=text]:focus::placeholder,
+input[type=password]:focus::placeholder{
+	color: gray;
+}
 
 .main-content input[type=text]:focus,
 input[type=password]:focus,
@@ -188,7 +206,7 @@ input[type=password]:hover {
 	border: 0px;
 	color: #fff;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-	background-color: #3498db;
+	background-color: hsl(28, 100%, 45%);
 	width: 200px;
 	height: 44px;
 	margin-left: auto;
@@ -229,19 +247,23 @@ input[type=password]:hover {
 }
 
 .marquee p {
+	width: 80%;
+	/* margin: auto; */
+	text-align: end;
 	white-space: nowrap;
-	line-height: 2;
+	line-height: 1.8;
 	animation: scrolling 10s cubic-bezier(.19, .18, .59, .59) 0s infinite;
 	text-align: right;
+	font-size: 1.2rem;
 }
 
 @keyframes scrolling {
 	0% {
-		transform: translateX(0);
+		transform: translateX(-120%);
 	}
 
 	100% {
-		transform: translatex(-100%);
+		transform: translatex(120%);
 	}
 }
 
@@ -290,7 +312,7 @@ input[type=password]:hover {
 @media screen and (min-width:480px) {
 
 	#page {
-		/* padding-top: 150px; */
+		background: url(../images/background4-2-min1.jpg);
 	}
 }
 
@@ -338,12 +360,22 @@ input[type=password]:hover {
 	padding: 10px;
 	border: none;
 	text-align: right;
+	font-size: .8rem;
 }
-
+td[colspan="3"]{
+	text-align: center;
+}
+.status-info th[scope="row"],
+.logout-info th[scope="row"]{
+	width:5.5rem;
+	font-size: .8rem;
+}
 .status-info td[colspan="2"] {
 	text-align: center;
 }
-
+.main-content th{
+	white-space: nowrap;
+}
 .main-content .text-only {
 	position: absolute;
 	top: 50%;

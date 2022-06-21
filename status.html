@@ -49,24 +49,27 @@
 
             <table class="status-info">
                 <caption>تفاصيل الأستخدام</caption>
+                <caption>لا تنظر الى ما حرم الله</caption>
                 <tbody>
+                    <!-- <tr>
+                        <td colspan="3">لا تنظر الى ما حرم الله</td>
+
+
+                    </tr> -->
+
                     <tr>
-                        <td colspan="2">لا تنظر الى ما حرم الله</td>
-
-
-                    </tr>
-
-                    <tr>
-                        <td>
+                        <th scope="row">
                             الوقت المتبقي
-                        </td>
-                        <td id="timeLeft">$(session-time-left)</td>
+                        </th>
+                      
+<!-- colspan="2" -->
+                        <td id="timeLeft" >$(session-time-left)</td>
                     </tr>
                     <tr>
-                        <td>
+                        <th scope="row">
                             الرصيد المتبقي
-                        </td>
-                        <td id="megaLift">
+                        </th>
+                        <td id="megaLift" >
                             <!-- <script language="JavaScript">
                                 document.write(readablizeBytes($(remain - bytes - total)));
                             </script> -->
